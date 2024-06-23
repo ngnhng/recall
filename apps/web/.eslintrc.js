@@ -6,4 +6,14 @@ module.exports = {
   parserOptions: {
     project: true,
   },
+  ignorePatterns: ["tailwind.config.js", "postcss.config.js"],
+  rules: {
+    "no-unused-vars": [
+      "error",
+      {
+        varsIgnorePattern: "^_",
+        argsIgnorePattern: "^_",
+      },
+    ],
+  },
 };
