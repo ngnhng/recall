@@ -9,7 +9,8 @@
         ],
         "paths": {
             "@/*": [
-                "./core/*"
+                "./core/*",
+                "../../packages/ui/src/*"
             ]
         }
     },

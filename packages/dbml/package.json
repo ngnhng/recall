@@ -1,0 +1,20 @@
+{
+  "name": "@hikari/markup-lang",
+  "description": "A markup language package for rendering DB schemas",
+  "authors": "author",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "@hikari/eslint-config": "workspace:*",
+    "@hikari/tailwind-config": "workspace:*",
+    "@hikari/typescript-config": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.0-rc.0",
+    "tsup": "^8.1.0",
+    "typescript": "^5"
+  }
+}
