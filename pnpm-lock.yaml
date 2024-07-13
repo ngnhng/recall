@@ -253,6 +253,10 @@ importers:
         version: 1.8.9(esbuild@0.21.5)(rollup@4.18.0)(webpack@5.92.1(esbuild@0.21.5))
 
   packages/hkr-lang:
+    dependencies:
+      antlr4ng:
+        specifier: ^3.0.4
+        version: 3.0.4(antlr4ng-cli@2.0.0)
     devDependencies:
       '@recall/eslint-config':
         specifier: workspace:*
@@ -272,6 +276,9 @@ importers:
       '@types/react-dom':
         specifier: ^18
         version: 18.3.0
+      antlr4ng-cli:
+        specifier: ^2.0.0
+        version: 2.0.0
       eslint:
         specifier: ^8
         version: 8.57.0
@@ -2985,6 +2992,15 @@ packages:
   ansi-styles@6.2.1:
     resolution: {integrity: sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==}
     engines: {node: '>=12'}
+
+  antlr4ng-cli@2.0.0:
+    resolution: {integrity: sha512-oAt5OSSYhRQn1PgahtpAP4Vp3BApCoCqlzX7Q8ZUWWls4hX59ryYuu0t7Hwrnfk796OxP/vgIJaqxdltd/oEvQ==}
+    hasBin: true
+
+  antlr4ng@3.0.4:
+    resolution: {integrity: sha512-u1Ww6wVv9hq70E9AaYe5qW3ba8hvnjJdO3ZsKnb3iJWFV/medLEEhbyWwXCvvD2ef0ptdaiIUgmaazS/WE6uyQ==}
+    peerDependencies:
+      antlr4ng-cli: ^2.0.0
 
   any-promise@1.3.0:
     resolution: {integrity: sha512-7UvmKalWRt1wgjL1RrGxoSJW/0QZFIegpeGvZG9kjp8vrRu55XTHbwnqq2GpXm9uLbcuhxm3IqX9OB4MZR1b2A==}
@@ -10474,6 +10490,12 @@ snapshots:
   ansi-styles@5.2.0: {}
 
   ansi-styles@6.2.1: {}
+
+  antlr4ng-cli@2.0.0: {}
+
+  antlr4ng@3.0.4(antlr4ng-cli@2.0.0):
+    dependencies:
+      antlr4ng-cli: 2.0.0
 
   any-promise@1.3.0: {}
 

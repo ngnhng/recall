@@ -17,6 +17,11 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "hkr:pg:parser:generate": {
+      "dependsOn": ["^hkr:pg:parser:generate"],
+      "inputs": ["packages/hkr-lang/src/parser/*.g4"],
+      "outputs": ["packages/hkr-lang/src/parser/*.ts"]
     }
   }
 }

@@ -12,10 +12,10 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --external react --minify",
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
-    "lint": "eslint . --max-warnings 0",
-    "generate:component": "turbo gen react-component"
+    "hkr:pg:parser:generate": "antlr4ng -o packages/hkr-lang/src/parser/*.g4"
   },
   "dependencies": {
+    "antlr4ng": "^3.0.4"
   },
   "devDependencies": {
     "@recall/eslint-config": "workspace:*",
@@ -24,6 +24,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "antlr4ng-cli": "^2.0.0",
     "eslint": "^8",
     "eslint-config-next": "15.0.0-rc.0",
     "tsup": "^8.1.0",
