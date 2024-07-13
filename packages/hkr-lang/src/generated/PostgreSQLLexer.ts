@@ -12,8 +12,8 @@ import {
   PredictionContextCache,
   Token,
 } from "antlr4";
+import PostgreSQLLexerBase, { checkLA, HandleLessLessGreaterGreater, pushTag, isTag } from "../lexer/PostgresSQLLexerBase";
 
-import PostgreSQLLexerBase from "./PostgreSQLLexerBase";
 
 export default class PostgreSQLLexer extends PostgreSQLLexerBase {
   public static readonly Dollar = 1;
@@ -2871,7 +2871,7 @@ export default class PostgreSQLLexer extends PostgreSQLLexerBase {
   private NumericFail_action(localctx: RuleContext, actionIndex: number): void {
     switch (actionIndex) {
       case 2:
-        HandleNumericFail();
+        this.HandleNumericFail();
         break;
     }
   }
@@ -2881,7 +2881,7 @@ export default class PostgreSQLLexer extends PostgreSQLLexerBase {
   ): void {
     switch (actionIndex) {
       case 3:
-        UnterminatedBlockCommentDebugAssert();
+        this.UnterminatedBlockCommentDebugAssert();
 
         break;
     }
@@ -2910,7 +2910,7 @@ export default class PostgreSQLLexer extends PostgreSQLLexerBase {
   ): void {
     switch (actionIndex) {
       case 6:
-        popTag();
+        this.popTag();
         break;
     }
   }
@@ -2963,7 +2963,7 @@ export default class PostgreSQLLexer extends PostgreSQLLexerBase {
   ): boolean {
     switch (predIndex) {
       case 6:
-        return charIsLetter();
+        return this.charIsLetter();
       case 7:
         return;
         CheckIfUtf32Letter();
