@@ -1,4 +1,4 @@
-type TableNames = HkrDatabase['schemas'][number]['tables'][number]['name'];
+type TableNames = HkrDatabase["schemas"][number]["tables"][number]["name"];
 
 export type HkrDatabase = {
   schemas: Schema[];
