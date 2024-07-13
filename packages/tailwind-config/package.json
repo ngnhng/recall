@@ -1,9 +1,12 @@
 {
-  "name": "@hikari/tailwind-config",
+  "name": "@recall/tailwind-config",
   "version": "0.0.0",
   "files": [
     "tailwind.config.js",
     "postcss.config.js"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "unplugin-turbo-console": "^1.8.9"
+  }
 }

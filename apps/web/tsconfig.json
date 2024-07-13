@@ -1,5 +1,5 @@
 {
-    "extends": "@hikari/typescript-config/nextjs.json",
+    "extends": "@recall/typescript-config/nextjs.json",
     "compilerOptions": {
         "baseUrl": ".",
         "plugins": [
@@ -16,7 +16,7 @@
     },
     "include": [
         "next-env.d.ts",
-        "next.config.js",
+        "next.config.mjs",
         "**/*.ts",
         "**/*.tsx",
         ".next/types/**/*.ts"

@@ -1,5 +1,5 @@
 {
-    "extends": "@hikari/typescript-config/react-library.json",
+    "extends": "@recall/typescript-config/react-library.json",
     "compilerOptions": {
         "baseUrl": ".",
         "outDir": "dist",

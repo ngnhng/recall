@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev --turbo --port 3002",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@hikari/dbml-editor": "workspace:*",
-    "@hikari/ui": "workspace:*",
+    "@recall/hkr-parser": "workspace:*",
+    "@recall/code-editor": "workspace:*",
+    "@recall/ui": "workspace:*",
     "babel-plugin-react-compiler": "0.0.0-experimental-938cd9a-20240601",
     "next": "15.0.0-rc.0",
     "react": "19.0.0-rc-f994737d14-20240522",
@@ -19,9 +20,9 @@
     "zustand": "^4.5.2"
   },
   "devDependencies": {
-    "@hikari/eslint-config": "workspace:*",
-    "@hikari/tailwind-config": "workspace:*",
-    "@hikari/typescript-config": "workspace:*",
+    "@recall/eslint-config": "workspace:*",
+    "@recall/tailwind-config": "workspace:*",
+    "@recall/typescript-config": "workspace:*",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -30,6 +31,7 @@
     "eslint-config-next": "15.0.0-rc.0",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "unplugin-turbo-console": "^1.8.9"
   }
 }

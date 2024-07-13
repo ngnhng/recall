@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import ReactFlow, {
   Node,
   useNodesState,
@@ -17,10 +17,12 @@ import ReactFlow, {
   Edge,
   addEdge,
   Connection,
+  BackgroundVariant,
 } from "reactflow";
 
 import "reactflow/dist/style.css";
 import { Database, Relation, Table } from "@/types/canvas";
+import { colors } from "@/constants/colors";
 
 type CanvasProps = {
   database: Database;
@@ -30,8 +32,11 @@ const Canvas = (props: CanvasProps) => {
   const {
     database: { tables, relations },
   } = props;
-  const initialNodes: Node[] = tables.map(tableToNode);
-  const initialEdges: Edge[] = relations.map(relationToEdge);
+  const initialNodes: Node[] = useMemo(() => tables.map(tableToNode), [tables]);
+  const initialEdges: Edge[] = useMemo(
+    () => relations.map(relationToEdge),
+    [relations]
+  );
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 
@@ -51,7 +56,13 @@ const Canvas = (props: CanvasProps) => {
           onConnect={onConnect}
           fitView
         >
-          <Background />
+          <Background id="1" gap={10} variant={BackgroundVariant.Lines} />
+          <Background
+            id="2"
+            gap={100}
+            color="#ccc"
+            variant={BackgroundVariant.Lines}
+          />
           <Controls />
         </ReactFlow>
       </ReactFlowProvider>

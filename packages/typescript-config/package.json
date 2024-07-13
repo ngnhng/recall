@@ -1,9 +1,12 @@
 {
-  "name": "@hikari/typescript-config",
+  "name": "@recall/typescript-config",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "unplugin-turbo-console": "^1.8.9"
   }
 }

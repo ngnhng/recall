@@ -1,0 +1,33 @@
+{
+  "name": "@recall/hkr-parser",
+  "description": "Hkr markup language package",
+  "authors": "author",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react --minify",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "lint": "eslint . --max-warnings 0",
+    "generate:component": "turbo gen react-component"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@recall/eslint-config": "workspace:*",
+    "@recall/tailwind-config": "workspace:*",
+    "@recall/typescript-config": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.0-rc.0",
+    "tsup": "^8.1.0",
+    "typescript": "^5",
+    "unplugin-turbo-console": "^1.8.9"
+  }
+}

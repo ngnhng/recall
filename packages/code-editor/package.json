@@ -1,5 +1,5 @@
 {
-  "name": "@hikari/dbml-editor",
+  "name": "@recall/code-editor",
   "description": "description",
   "authors": "author",
   "version": "1.0.0",
@@ -29,9 +29,9 @@
     "react-dom": "19.0.0-rc-f994737d14-20240522"
   },
   "devDependencies": {
-    "@hikari/eslint-config": "workspace:*",
-    "@hikari/tailwind-config": "workspace:*",
-    "@hikari/typescript-config": "workspace:*",
+    "@recall/eslint-config": "workspace:*",
+    "@recall/tailwind-config": "workspace:*",
+    "@recall/typescript-config": "workspace:*",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -41,9 +41,11 @@
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
     "tsup": "^8.1.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "unplugin-turbo-console": "^1.8.9"
   },
   "dependencies": {
+    "@recall/hkr-parser": "workspace:*",
     "@monaco-editor/react": "^4.6.0"
   }
 }

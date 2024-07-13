@@ -1,81 +1,136 @@
-# Turborepo starter
 
-This is an official starter Turborepo.
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a id="readme-top"></a>
 
-## Using this example
 
-Run the following command:
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+<!-- [![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Apache License][license-shield]][license-url] -->
 
-```sh
-npx create-turbo@latest
-```
 
-## What's inside?
+[![Discord][discord-shield]][discord-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Twitter][twitter-shield]][twitter-url]
 
-This Turborepo includes the following packages/apps:
 
-### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+<!--[![screen Shot][product-screenshot]](https://)-->
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+<div align="center">
+<h3 align="center">Recall</h3>
+  <p align="center">
+    Web-based visual editor for Relational Databases
+    <br />
+    <a href="https://github.com/nguyendhst/recall/wiki"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <!--<a href="">View Demo</a>-->
+    ·
+    <!--<a href="/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    ·
+    <a href="/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>-->
+  </p>
+</div>
 
-### Utilities
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li> <a href="#about">About</a> </li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
-This Turborepo has some additional tools already setup for you:
+## About
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+Recall is a web-based visual editor for relational databases. It allows users to create, edit, and manage databases without writing SQL DDL.
 
-### Build
+### Built With
+* [![React][React.js]][React-url]
+* [![Next.js][Next.js]][Next-url]
+* [![TailwindCSS][TailwindCSS]][Tailwind-url]
 
-To build all apps and packages, run the following command:
+### Installation
 
-```
-cd my-turborepo
-pnpm build
-```
+- Requirements:
+  - Node.js 20
+  - pnpm
 
-### Develop
+1. Clone the repo
+   ```sh
+   git clone https://github.com/nguyendhst/recall.git
+   ```
+2. Install NPM packages
+   ```sh
+   pnpm install
+   ```
+3. Run the web app
+   ```js
+   pnpm run dev --filter=web...
+   ```
 
-To develop all apps and packages, run the following command:
 
-```
-cd my-turborepo
-pnpm dev
-```
+## Roadmap
 
-### Remote Caching
+* [X] Code Editor
+* [ ] SQL Parser
+* [ ] Markup language for Database
+* [ ] UI for Database
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+See the [roadmap](readme/ROADMAP.md) for a detailed list of project goals and improvements.
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+See the [open issues](/issues) for a full list of proposed features (and known issues).
 
-```
-cd my-turborepo
-npx turbo login
-```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+## Contributing
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also [open issues](/issues).
 
-```
-npx turbo link
-```
 
-## Useful Links
+See the [CONTRIBUTING.md](readme/CONTRIBUTING.md) for instructions and code of conduct.
 
-Learn more about the power of Turborepo:
+## Contact
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+
+## Acknowledgments
+
+* [ANTLR4](https://www.antlr.org/)
+
+## License
+
+Distributed under the Apache 2.0 License. See [LICENSE.md](LICENSE.md) for more information.
+
+
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/onlook-dev/studio.svg?style=for-the-badge
+[contributors-url]: https://github.com/
+
+[discord-shield]: https://img.shields.io/badge/-Discord-black?logo=discord&colorB=555
+[discord-url]: https://discord.gg/
+
+[React.js]: https://img.shields.io/badge/react-%2320232a.svg?logo=react&logoColor=%2361DAFB
+[React-url]: https://reactjs.org/
+
+[TailwindCSS]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?logo=tailwind-css&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+
+[product-screenshot]: readme/assets/brand.png
+
+[Next.js]: https://img.shields.io/badge/Next.js-000000?logo=Next.js&logoColor=white
+[Next-url]: https://nextjs.org/

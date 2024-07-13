@@ -1,12 +1,13 @@
 {
-  "name": "hikari",
+  "name": "recall",
   "private": true,
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "clean": "git clean -fdX"
   },
   "devDependencies": {
     "husky": "^9.0.11",

@@ -1,6 +1,6 @@
-import Editor from "@monaco-editor/react";
+import _Editor from "@monaco-editor/react";
 
-export const DbmlEditor = ({
+export const Editor = ({
   height = "100vh",
   theme = "vs-dark",
   onContentChange,
@@ -207,13 +207,10 @@ export const DbmlEditor = ({
     }
   };
 
-  const handleOnChange = (v: string | undefined, _e: any) => {
-    if (onContentChange) {
-      onContentChange(v || "");
-    }
-  };
+  const handleOnChange = (v: string | undefined, _e: any) => {};
+
   return (
-    <Editor
+    <_Editor
       onMount={handleEditorDidMount}
       height={height}
       theme={theme}
