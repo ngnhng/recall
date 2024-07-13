@@ -12,8 +12,8 @@ export const Editor = ({
 }) => {
   const handleEditorDidMount = (_editor: any, monaco: any) => {
     if (monaco) {
-      monaco.languages.register({ id: "dbml" });
-      monaco.languages.setMonarchTokensProvider("dbml", {
+      monaco.languages.register({ id: "hkr" });
+      monaco.languages.setMonarchTokensProvider("hkr", {
         tokenizer: {
           root: [
             [/\b(?:Table|Enum|Ref|TableGroup)\b/, "keyword"],
@@ -35,7 +35,7 @@ export const Editor = ({
           ],
         },
       });
-      monaco.languages.setLanguageConfiguration("dbml", {
+      monaco.languages.setLanguageConfiguration("hkr", {
         comments: {
           lineComment: "--",
           blockComment: ["/*", "*/"],
@@ -61,7 +61,7 @@ export const Editor = ({
         ],
       });
 
-      monaco.languages.registerCompletionItemProvider("dbml", {
+      monaco.languages.registerCompletionItemProvider("hkr", {
         provideCompletionItems: (model: any, position: any) => {
           const word = model.getWordUntilPosition(position);
           const range = {
@@ -180,7 +180,7 @@ export const Editor = ({
         },
       });
 
-      monaco.editor.defineTheme("dbmlTheme", {
+      monaco.editor.defineTheme("hkrTheme", {
         base: "vs-dark",
         inherit: true,
         colors: {
@@ -203,7 +203,7 @@ export const Editor = ({
           { token: "string", foreground: "5eead4" },
         ],
       });
-      monaco.editor.setTheme("dbmlTheme");
+      monaco.editor.setTheme("hkrTheme");
     }
   };
 
@@ -214,7 +214,7 @@ export const Editor = ({
       onMount={handleEditorDidMount}
       height={height}
       theme={theme}
-      language="dbml"
+      language="hkr"
       onChange={handleOnChange}
     />
   );
