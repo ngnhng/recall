@@ -1,5 +1,5 @@
-import antlr4 from 'antlr4';
-import { Lexer } from 'antlr4';
+import antlr4 from "antlr4";
+import { Lexer } from "antlr4";
 // Adapted from Go: https://github.com/antlr/grammars-v4/blob/master/sql/postgresql/Go/postgresql_lexer_base.go
 export default class PostgreSQLLexerBase extends antlr4.Lexer {
   stack: string[] = [];
