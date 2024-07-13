@@ -17,8 +17,6 @@
 [![Apache License][license-shield]][license-url] -->
 
 [![Discord][discord-shield]][discord-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-[![Twitter][twitter-shield]][twitter-url]
 
 <!--[![screen Shot][product-screenshot]](https://)-->
 
