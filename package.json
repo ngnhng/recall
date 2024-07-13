@@ -5,7 +5,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\" --ignore-path .prettierignore",
     "prepare": "husky",
     "hkr:pg:parser:generate": "turbo run hkr:pg:parser:generate",
     "clean:all": "git clean -fdX",
