@@ -1,0 +1,148 @@
+.
+|-- LICENSE
+|-- README.md
+|-- apps
+|   |-- storybook
+|   |   |-- README.md
+|   |   |-- next.config.mjs
+|   |   |-- package.json
+|   |   |-- postcss.config.mjs
+|   |   |-- public
+|   |   |   |-- favicon.ico
+|   |   |   |-- next.svg
+|   |   |   `-- vercel.svg
+|   |   |-- src
+|   |   |   |-- pages
+|   |   |   |   |-- _app.tsx
+|   |   |   |   |-- _document.tsx
+|   |   |   |   |-- api
+|   |   |   |   |   `-- hello.ts
+|   |   |   |   `-- index.tsx
+|   |   |   |-- stories
+|   |   |   |   `-- Button.stories.tsx
+|   |   |   `-- styles
+|   |   |       `-- globals.css
+|   |   |-- tailwind.config.ts
+|   |   `-- tsconfig.json
+|   `-- web
+|       |-- README.md
+|       |-- app
+|       |   |-- editor
+|       |   |   |-- _components
+|       |   |   |   |-- editor-canvas
+|       |   |   |   |   |-- canvas.tsx
+|       |   |   |   |   `-- table.tsx
+|       |   |   |   `-- panels.tsx
+|       |   |   `-- page.tsx
+|       |   |-- favicon.ico
+|       |   |-- fonts
+|       |   |   |-- GeistMonoVF.woff
+|       |   |   `-- GeistVF.woff
+|       |   |-- globals.css
+|       |   |-- layout.tsx
+|       |   |-- page.module.css
+|       |   `-- page.tsx
+|       |-- core
+|       |   |-- constants
+|       |   |   `-- colors.ts
+|       |   |-- hooks
+|       |   |   |-- store
+|       |   |   |   `-- use-theme.ts
+|       |   |   |-- use-debounce.tsx
+|       |   |   `-- use-local-storage.ts
+|       |   |-- lib
+|       |   |   |-- cookies.ts
+|       |   |   `-- store-context.tsx
+|       |   |-- stores
+|       |   |   |-- root.store.ts
+|       |   |   `-- theme.store.ts
+|       |   `-- types
+|       |       `-- canvas.tsx
+|       |-- next-env.d.ts
+|       |-- next.config.mjs
+|       |-- package.json
+|       |-- postcss.config.js
+|       |-- public
+|       |   |-- file-text.svg
+|       |   |-- globe.svg
+|       |   |-- next.svg
+|       |   |-- vercel.svg
+|       |   `-- window.svg
+|       |-- tailwind.config.js
+|       `-- tsconfig.json
+|-- package.json
+|-- packages
+|   |-- code-editor
+|   |   |-- dist
+|   |   |   |-- index.d.mts
+|   |   |   |-- index.d.ts
+|   |   |   |-- index.js
+|   |   |   `-- index.mjs
+|   |   |-- package.json
+|   |   |-- postcss.config.js
+|   |   |-- src
+|   |   |   |-- components
+|   |   |   |   `-- editor.tsx
+|   |   |   `-- index.ts
+|   |   |-- tailwind.config.js
+|   |   |-- tsconfig.json
+|   |   `-- tsup.config.ts
+|   |-- eslint-config
+|   |   |-- README.md
+|   |   |-- library.js
+|   |   |-- next.js
+|   |   |-- package.json
+|   |   `-- react-internal.js
+|   |-- hkr-lang
+|   |   |-- dist
+|   |   |   |-- index.d.mts
+|   |   |   |-- index.d.ts
+|   |   |   |-- index.js
+|   |   |   `-- index.mjs
+|   |   |-- package.json
+|   |   |-- src
+|   |   |   |-- index.ts
+|   |   |   `-- types.ts
+|   |   `-- tsconfig.json
+|   |-- sync
+|   |   `-- package.json
+|   |-- tailwind-config
+|   |   |-- package.json
+|   |   |-- postcss.config.js
+|   |   `-- tailwind.config.js
+|   |-- typescript-config
+|   |   |-- base.json
+|   |   |-- nextjs.json
+|   |   |-- package.json
+|   |   `-- react-library.json
+|   `-- ui
+|       |-- dist
+|       |   |-- index.d.mts
+|       |   |-- index.d.ts
+|       |   |-- index.js
+|       |   `-- index.mjs
+|       |-- package.json
+|       |-- postcss.config.js
+|       |-- src
+|       |   |-- button.tsx
+|       |   |-- card.tsx
+|       |   |-- code.tsx
+|       |   |-- index.ts
+|       |   |-- lib
+|       |   |   `-- utils
+|       |   |       `-- index.ts
+|       |   `-- resizable.tsx
+|       |-- tailwind.config.js
+|       |-- tsconfig.json
+|       |-- tsconfig.lint.json
+|       `-- turbo
+|           `-- generators
+|               |-- config.ts
+|               `-- templates
+|                   `-- component.hbs
+|-- pbcopy
+|-- pnpm-lock.yaml
+|-- pnpm-workspace.yaml
+`-- turbo.json
+
+43 directories, 103 files

@@ -7,7 +7,8 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky",
-    "clean": "git clean -fdX"
+    "clean:all": "git clean -fdX",
+    "clean:dist": "git clean -fdX packages/*/dist"
   },
   "devDependencies": {
     "husky": "^9.0.11",
