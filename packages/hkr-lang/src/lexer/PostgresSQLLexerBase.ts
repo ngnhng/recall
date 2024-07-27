@@ -23,7 +23,7 @@ export default class PostgreSQLLexerBase extends antlr4.Lexer {
   }
 
   checkLA(c: number): boolean {
-    return this._input.LA(1) !== c;
+    return this._input.LA(1) === c;
   }
 
   charIsLetter(): boolean {
@@ -48,7 +48,7 @@ export default class PostgreSQLLexerBase extends antlr4.Lexer {
 
   UnterminatedBlockCommentDebugAssert(): void {
     // TypeScript version does not directly support Debug.Assert; use console.assert in development or throw an error as needed.
-    // console.assert(this.baseLexer.inputStream.LA(1) === antlr.Token.EOF, "Expected end of file");
+    // console.assert(this.baseLexer.inputStream.LA(1) === antlr4.Token.EOF, "Expected end of file");
   }
 
   checkIfUtf32Letter(): boolean {

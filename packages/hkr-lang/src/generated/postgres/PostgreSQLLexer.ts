@@ -12,7 +12,7 @@ import {
   PredictionContextCache,
   Token,
 } from "antlr4";
-import PostgreSQLLexerBase, { checkLA, HandleLessLessGreaterGreater, pushTag, isTag } from "../lexer/PostgresSQLLexerBase";
+import PostgreSQLLexerBase from "../lexer/PostgresSQLLexerBase";
 
 
 export default class PostgreSQLLexer extends PostgreSQLLexerBase {
@@ -2853,7 +2853,7 @@ export default class PostgreSQLLexer extends PostgreSQLLexerBase {
   private Operator_action(localctx: RuleContext, actionIndex: number): void {
     switch (actionIndex) {
       case 0:
-        HandleLessLessGreaterGreater();
+        this.HandleLessLessGreaterGreater();
 
         break;
     }
@@ -2864,7 +2864,7 @@ export default class PostgreSQLLexer extends PostgreSQLLexerBase {
   ): void {
     switch (actionIndex) {
       case 1:
-        pushTag();
+        this.pushTag();
         break;
     }
   }
@@ -2935,11 +2935,11 @@ export default class PostgreSQLLexer extends PostgreSQLLexerBase {
   private Operator_sempred(localctx: RuleContext, predIndex: number): boolean {
     switch (predIndex) {
       case 0:
-        return checkLA("-");
+        return this.checkLA("-".charCodeAt(0));
       case 1:
-        return checkLA("*");
+        return this.checkLA("*".charCodeAt(0));
       case 2:
-        return checkLA("*");
+        return this.checkLA("*".charCodeAt(0));
     }
     return true;
   }
@@ -2949,11 +2949,11 @@ export default class PostgreSQLLexer extends PostgreSQLLexerBase {
   ): boolean {
     switch (predIndex) {
       case 3:
-        return checkLA("-");
+        return this.checkLA("-".charCodeAt(0));
       case 4:
-        return checkLA("*");
+        return this.checkLA("*".charCodeAt(0));
       case 5:
-        return checkLA("-");
+        return this.checkLA("-".charCodeAt(0));
     }
     return true;
   }
@@ -2964,9 +2964,8 @@ export default class PostgreSQLLexer extends PostgreSQLLexerBase {
     switch (predIndex) {
       case 6:
         return this.charIsLetter();
-      case 7:
-        return;
-        CheckIfUtf32Letter();
+        case 7:
+        this.checkIfUtf32Letter();
     }
     return true;
   }
@@ -2976,7 +2975,7 @@ export default class PostgreSQLLexer extends PostgreSQLLexerBase {
   ): boolean {
     switch (predIndex) {
       case 8:
-        return isTag();
+        return this.isTag();
     }
     return true;
   }
