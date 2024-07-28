@@ -29,6 +29,7 @@
     "@recall/eslint-config": "workspace:*",
     "@recall/tailwind-config": "workspace:*",
     "@recall/typescript-config": "workspace:*",
+    "@recall/types": "workspace:*",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

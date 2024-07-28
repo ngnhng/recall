@@ -1,0 +1,6 @@
+{
+  "name": "@recall/types",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.d.ts"
+}

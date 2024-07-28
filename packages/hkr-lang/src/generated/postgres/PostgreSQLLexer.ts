@@ -12,7 +12,7 @@ import {
   PredictionContextCache,
   Token,
 } from "antlr4";
-import PostgreSQLLexerBase from "../lexer/PostgresSQLLexerBase";
+import PostgreSQLLexerBase from "../../lexer/PostgresSQLLexerBase";
 
 
 export default class PostgreSQLLexer extends PostgreSQLLexerBase {

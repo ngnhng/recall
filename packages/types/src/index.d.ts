@@ -1,6 +1,6 @@
-type TableNames = HkrDatabase["schemas"][number]["tables"][number]["name"];
+type TableNames = Database["schemas"][number]["tables"][number]["name"];
 
-export type HkrDatabase = {
+export type Database = {
   schemas: Schema[];
 };
 
@@ -27,7 +27,7 @@ export type Index = {
 
 export type Field = {
   name: string;
-  type: string;
+  type: string; 
   unique: boolean;
   primary: boolean;
   notNull: boolean;

@@ -13,6 +13,7 @@ import {
 } from 'antlr4';
 import PostgreSQLParserListener from "./PostgreSQLParserListener.js";
 import PostgreSQLParserVisitor from "./PostgreSQLParserVisitor.js";
+import PostgreSQLParserBase from "../../parser/PostgreSQLParserBase";
 
 // for running tests with parameters, TODO: discuss strategy for typed parameters in CI
 // eslint-disable-next-line no-unused-vars
@@ -20,7 +21,6 @@ type int = number;
 
 
 
-import PostgreSQLParserBase from './PostgreSQLParserBase';
 
 export default class PostgreSQLParser extends PostgreSQLParserBase {
 	public static readonly Dollar = 1;

@@ -264,6 +264,9 @@ importers:
       '@recall/tailwind-config':
         specifier: workspace:*
         version: link:../tailwind-config
+      '@recall/types':
+        specifier: workspace:*
+        version: link:../types
       '@recall/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
@@ -299,6 +302,8 @@ importers:
       unplugin-turbo-console:
         specifier: ^1.8.9
         version: 1.8.9(esbuild@0.21.5)(rollup@4.18.0)(webpack@5.92.1(esbuild@0.21.5))
+
+  packages/types: {}
 
   packages/typescript-config:
     devDependencies:
