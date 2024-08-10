@@ -20,6 +20,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --external react --minify",
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "test": "jest",
     "hkr:pg:parser:generate": "antlr4 -Dlanguage=TypeScript -o src/generated/ -visitor -listener -Xexact-output-dir src/grammar/pg/PostgreSQLLexer.g4 src/grammar/pg/PostgreSQLParser.g4"
   },
   "dependencies": {
@@ -28,13 +29,16 @@
   "devDependencies": {
     "@recall/eslint-config": "workspace:*",
     "@recall/tailwind-config": "workspace:*",
-    "@recall/typescript-config": "workspace:*",
     "@recall/types": "workspace:*",
+    "@recall/typescript-config": "workspace:*",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "15.0.0-rc.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
     "tsup": "^8.1.0",
     "typescript": "^5",
     "unplugin-turbo-console": "^1.8.9"

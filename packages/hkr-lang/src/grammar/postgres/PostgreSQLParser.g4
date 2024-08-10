@@ -2010,7 +2010,7 @@ aggregate_with_argtypes_list
 
 createfunc_opt_list
     : createfunc_opt_item+ {
-                ParseRoutineBody(_localctx);
+                ParseRoutineBody(localctx);
             }
     //                    | createfunc_opt_list createfunc_opt_item
     ;

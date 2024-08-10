@@ -22,6 +22,9 @@
       "dependsOn": ["^hkr:pg:parser:generate"],
       "inputs": ["packages/hkr-lang/src/parser/*.g4"],
       "outputs": ["packages/hkr-lang/src/parser/*.ts"]
+    },
+    "test": {
+      "dependsOn": ["^test"]
     }
   }
 }

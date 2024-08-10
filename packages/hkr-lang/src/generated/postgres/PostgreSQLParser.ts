@@ -34406,7 +34406,7 @@ export default class PostgreSQLParser extends PostgreSQLParserBase {
 				_alt = this._interp.adaptivePredict(this._input, 286, this._ctx);
 			} while (_alt !== 2 && _alt !== ATN.INVALID_ALT_NUMBER);
 
-			                ParseRoutineBody(_localctx);
+			               this.ParseRoutineBody(localctx);
 			            
 			}
 		}
@@ -102360,7 +102360,7 @@ export class Createfunc_opt_itemContext extends ParserRuleContext {
 
 
 export class Func_asContext extends ParserRuleContext {
-	public Definition: ParserRuleContext;
+	public Definition: ParserRuleContext | undefined;
 	public _def!: SconstContext;
 	constructor(parser?: PostgreSQLParser, parent?: ParserRuleContext, invokingState?: number) {
 		super(parent, invokingState);
@@ -106726,9 +106726,9 @@ export class AltertsconfigurationstmtContext extends ParserRuleContext {
 	public CONFIGURATION(): TerminalNode {
 		return this.getToken(PostgreSQLParser.CONFIGURATION, 0);
 	}
-	public any_name_list(): Any_nameContext[] {
-		return this.getTypedRuleContexts(Any_nameContext) as Any_nameContext[];
-	}
+	//public any_name_list(): Any_nameContext[] {
+	//	return this.getTypedRuleContexts(Any_nameContext) as Any_nameContext[];
+	//}
 	public any_name(i: number): Any_nameContext {
 		return this.getTypedRuleContext(Any_nameContext, i) as Any_nameContext;
 	}

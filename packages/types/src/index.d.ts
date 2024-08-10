@@ -27,7 +27,7 @@ export type Index = {
 
 export type Field = {
   name: string;
-  type: string; 
+  type: string;
   unique: boolean;
   primary: boolean;
   notNull: boolean;
